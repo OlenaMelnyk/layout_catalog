@@ -1,8 +1,9 @@
 .product {
-  @include centeredFlex;
-  flex-wrap: wrap;
+  @include centeredGrid;
+  // align-content: center;
+  grid-template-columns: repeat(4, 200px);
+  grid-column-gap: 50px;
   margin: 50px auto;
-  max-width: 1024px;
 
   &-style {
     font-size: 11px;
@@ -45,11 +46,11 @@
       
       @keyframes imghover {
         from {
-          transform: scale(1.0);
-        } 
+          transform: scale(1);
+        }
         to {
           transform: scale(1.2);
-        } 
+        }
       }
     }
   }
@@ -73,7 +74,8 @@
   /* rating & review block */
   
   &__rating {
-    @include spaceBetweenFlex;
+    @include spaceBetweenGrid;
+    grid-template-columns: 100px auto;
     align-items: center;
     margin-bottom: 20px;
   }
@@ -89,7 +91,8 @@
   /* price block */
   
   &__price {
-    @include spaceBetweenFlex;
+    @include spaceBetweenGrid;
+    grid-template-columns: 50px auto;
     align-items: baseline;
     margin-bottom: 20px;
   }
@@ -100,7 +103,7 @@
   }
   
   &__buy {
-    @include centeredFlex;
+    @include centeredGrid;
     align-items: center;
     height: 38px;
   

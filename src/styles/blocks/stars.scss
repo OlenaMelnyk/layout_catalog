@@ -1,15 +1,17 @@
 .stars {
-  display: flex;
+  display: grid;
+  grid-gap: 4px;
+  grid-template-columns: repeat(5, $starSize);
 
   &__star {
-    flex-direction: row;
+    // flex-direction: row;
     background-image: url("../images/star.svg");
     background-repeat: no-repeat;
     background-position: center;
 
     width: $starSize;
     height: $starSize;
-    margin-right: 4px;
+    // margin-right: 4px;
   }
 
   .star-active {

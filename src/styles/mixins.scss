@@ -7,3 +7,18 @@
   display: flex;
   justify-content: space-between;
 }
+
+@mixin centeredGrid {
+  display: grid;
+  justify-content: center;
+}
+
+@mixin spaceBetweenGrid {
+  display: grid;
+  justify-content: space-between;
+}
+
+@mixin spaceAroundGrid {
+  display: grid;
+  justify-content: space-around;
+}
