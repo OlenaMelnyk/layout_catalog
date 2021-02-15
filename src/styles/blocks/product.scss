@@ -34,23 +34,14 @@
     width: 160px;
     height: 134px;
     margin: 15px auto 44px;
+    transition: transform 1s;
 
     &:hover {
       border: 3px solid #f3f3f3;
       margin-top: 0;
       margin-bottom: 29px;
       padding: 12px 0;
-      animation: imghover 1s;
-      animation-fill-mode: forwards;
-      
-      @keyframes imghover {
-        from {
-          transform: scale(1.0);
-        } 
-        to {
-          transform: scale(1.2);
-        } 
-      }
+      transform: scale(1.2);
     }
   }
   
@@ -113,23 +104,11 @@
     background-color: $mainBlueColor;
     border: 1px solid $mainBlueColor;
     border-radius: 5px;
+    transition: color 1s, background-color 1s;
 
     &:hover {
-      animation: smoothhover 3s;
-
-      @keyframes smoothhover {
-        from {
-          background-color: $mainBlueColor;
-          color: white;
-        }
-        50% {
-          color: $mainBlueColor;
-        }
-        to {
-          background-color: #fff;
-          color: $mainBlueColor;
-        }
-      }
+      background-color: #fff;
+      color: $mainBlueColor;
     }
 
   }
