@@ -1,8 +1,8 @@
 .product {
   @include centeredGrid;
-  // align-content: center;
   grid-template-columns: repeat(4, 200px);
-  grid-column-gap: 50px;
+  grid-column-gap: 48px;
+  grid-row-gap: 50px;
   margin: 50px auto;
 
   &-style {
@@ -23,10 +23,6 @@
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.07);
     border-radius: 5px;
 
-  }
-  
-  &__card-outer {
-    margin: 0 24px 50px;
   }
   
   &__photo {

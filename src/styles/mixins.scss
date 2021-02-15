@@ -1,13 +1,3 @@
-@mixin centeredFlex {
-  display: flex;
-  justify-content: center;
-}
-
-@mixin spaceBetweenFlex {
-  display: flex;
-  justify-content: space-between;
-}
-
 @mixin centeredGrid {
   display: grid;
   justify-content: center;
