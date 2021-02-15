@@ -1,9 +1,14 @@
-@mixin centeredFlex {
-  display: flex;
+@mixin centeredGrid {
+  display: grid;
   justify-content: center;
 }
 
-@mixin spaceBetweenFlex {
-  display: flex;
+@mixin spaceBetweenGrid {
+  display: grid;
   justify-content: space-between;
+}
+
+@mixin spaceAroundGrid {
+  display: grid;
+  justify-content: space-around;
 }
