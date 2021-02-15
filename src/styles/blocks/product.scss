@@ -21,6 +21,7 @@
     border: 1px solid #f3f3f3;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.07);
     border-radius: 5px;
+
   }
   
   &__card-outer {
@@ -29,9 +30,19 @@
   
   &__photo {
     display: block;
+    box-sizing: content-box;
     width: 160px;
     height: 134px;
-    margin: 15px 5px 44px;
+    margin: 15px auto 44px;
+    transition: transform 1s;
+
+    &:hover {
+      border: 3px solid #f3f3f3;
+      margin-top: 0;
+      margin-bottom: 29px;
+      padding: 12px 0;
+      transform: scale(1.2);
+    }
   }
   
   &__name {
@@ -93,6 +104,7 @@
     background-color: $mainBlueColor;
     border: 1px solid $mainBlueColor;
     border-radius: 5px;
+    transition: color 0.3s, background-color 0.3s;
 
     &:hover {
       background-color: #fff;
